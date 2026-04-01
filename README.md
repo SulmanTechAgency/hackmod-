@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>3Patti Hack Buy </title>
+<title>3Patti Hero</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -87,7 +87,7 @@ input{
 
 <body>
 
-<h2 class="glow">🎮 3Patti Hack Download</h2>
+<h2 class="glow">🎮 3Patti Hero</h2>
 <p class="glow">★★★★★ 4.9 (5000 Reviews)</p>
 
 <div class="box">
