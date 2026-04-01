@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>3Patti Hero</title>
+<title>3Patti Hack Apk</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -19,7 +19,7 @@ body{
     text-shadow:0 0 5px #00ffcc,0 0 10px #00ffcc;
 }
 
-/* Boxes */
+/* Box */
 .box{
     background:#111;
     margin:8px;
@@ -27,7 +27,7 @@ body{
     border-radius:10px;
 }
 
-/* Small Buttons */
+/* Button */
 button{
     padding:10px;
     margin:6px;
@@ -36,27 +36,9 @@ button{
     background:#00c853;
     color:white;
     width:90%;
-    font-size:14px;
 }
 
-/* Input */
-input{
-    padding:8px;
-    width:85%;
-    border-radius:6px;
-    border:none;
-}
-
-/* Game cards */
-.game{
-    background:#222;
-    margin:6px;
-    padding:10px;
-    border-radius:8px;
-    font-size:14px;
-}
-
-/* Floating circle buttons */
+/* Floating */
 .floating{
     position:fixed;
     bottom:15px;
@@ -66,20 +48,30 @@ input{
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:20px;
-    box-shadow:0 0 10px #00ffcc;
+}
+.whatsapp{ right:15px; background:#25D366; }
+.ai{ left:15px; background:#00c853; }
+
+/* Live counter */
+#liveUsers{
+    position:fixed;
+    top:10px;
+    right:10px;
+    background:#111;
+    padding:8px;
+    border-radius:8px;
+    font-size:12px;
 }
 
-/* WhatsApp button */
-.whatsapp{
-    right:15px;
-    background:#25D366;
-}
-
-/* AI button */
-.ai{
-    left:15px;
-    background:#00c853;
+/* Popup */
+.popup{
+    position:fixed;
+    bottom:80px;
+    left:-300px;
+    background:#111;
+    padding:10px;
+    border-radius:10px;
+    transition:0.5s;
 }
 </style>
 
@@ -87,84 +79,63 @@ input{
 
 <body>
 
-<h2 class="glow">🎮 3Patti Hero</h2>
-<p class="glow">★★★★★ 4.9 (5000 Reviews)</p>
+<h2 class="glow">🎮 3Patti Hack Download</h2>
+
+<!-- Live Users -->
+<div id="liveUsers" class="glow">👥 5234 Online</div>
 
 <div class="box">
 <p class="glow">💰 10,000 PKR</p>
-<p>JazzCash: 03342487879</p>
-<p>Name: Khursheed Ahmad</p>
 </div>
 
-<div class="box">
-<p>💸 Payment karein</p>
-<p>📸 Screenshot lein</p>
-<p>📲 WhatsApp par bhejein</p>
-</div>
+<!-- Popup -->
+<div id="popup" class="popup glow"></div>
 
-<div class="box">
-<p class="glow">🎮 Select Game</p>
-
-<div class="game" onclick="selectGame('mines')">
-MINES GAME - 10K
-</div>
-
-<div class="game" onclick="selectGame('dragon')">
-DRAGON VS TIGER - 10K
-</div>
-
-<p id="selectedGame"></p>
-</div>
-
-<div class="box">
-<p class="glow">🔑 Enter Code</p>
-<input id="code" placeholder="Code">
-<br><br>
-<button onclick="check()">UNLOCK</button>
-<p id="msg"></p>
-</div>
-
-<!-- Bottom Text -->
-<div class="box">
-<p class="glow">📢 JOIN FOR NEW UPDATES</p>
-<a href="https://whatsapp.com/channel/0029VbCXG619hXF9XzLnAP1r">
-<button>Join Channel</button>
-</a>
-</div>
-
-<!-- Floating Buttons -->
+<!-- Floating -->
 <a href="https://wa.me/923342487879" class="floating whatsapp">💬</a>
-
-<div class="floating ai" onclick="alert('AI Coming Soon 🤖')">🤖</div>
+<div class="floating ai" onclick="alert('AI 🤖')">🤖</div>
 
 <script>
-let selected = "";
+
+// 🔥 Live Users Counter
+let users = 5200;
+
+setInterval(()=>{
+    let change = Math.floor(Math.random()*20);
+
+    if(Math.random() > 0.5){
+        users += change;
+    } else {
+        users -= Math.floor(Math.random()*3);
+    }
+
+    if(users < 5000) users = 5000;
+
+    document.getElementById("liveUsers").innerText = "👥 " + users + " Online";
+},3000);
+
+// 🔔 Activity Popup
+let names = ["Ali","Ahmed","Usman","Zain","Hamza","Bilal","Zainab","latif","sulman","rafeeq","rasheed","haneef","kashif","sabir","sadiq","shareef","ramzan","rajab","farooq","sona","Ahmad Raza"];
+
+setInterval(()=>{
+    let popup = document.getElementById("popup");
+    let name = names[Math.floor(Math.random()*names.length)];
+
+    popup.innerText = name + " unlocked premium access";
+
+    popup.style.left = "10px";
+
+    et selected = "";
 
 let validCodes = ["P1001","P1002","P1003","P1004","P1005"]; // sample (baaki tum add kar sakte ho)
+    
 
-function selectGame(game){
-    selected = game;
-    document.getElementById("selectedGame").innerText = "Selected: " + game;
-}
+    setTimeout(()=>{
+        popup.style.left = "-300px";
+    },2000);
 
-function check(){
-    let c = document.getElementById("code").value;
+},4000);
 
-    if(!selected){
-        document.getElementById("msg").innerText = "Select game first!";
-        return;
-    }
-
-    if(validCodes.includes(c)){
-        if(selected === "mines"){
-            window.location.href = "https://www.appcreator24.com/app3976556-jnmzvd";
-        } else {
-            window.location.href = "https://www.appcreator24.com/app3977832-u6049p";
-        }
-    } else {
-        document.getElementById("msg").innerText = "Invalid Code!";
-    }
-}
 </script>
 
 </body>
