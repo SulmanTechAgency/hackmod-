@@ -7,7 +7,7 @@
 <style>
 body{
     font-family: Arial;
-    background:black;
+    background:#0d0d0d;
     color:white;
     text-align:center;
     margin:0;
@@ -15,51 +15,45 @@ body{
 
 /* Glow */
 .glow{
-    color:#00ffcc;
-    text-shadow:0 0 5px #00ffcc,0 0 15px #00ffcc;
+    color:#00ffc3;
+    text-shadow:0 0 10px #00ffc3,0 0 20px #00ffc3;
 }
 
 /* Box */
 .box{
-    background:#111;
-    margin:8px;
-    padding:12px;
-    border-radius:10px;
+    background:#1a1a1a;
+    margin:10px;
+    padding:15px;
+    border-radius:15px;
 }
 
-/* Button */
+/* Buttons */
 button{
-    padding:10px;
+    padding:12px;
     margin:6px;
     border:none;
-    border-radius:8px;
+    border-radius:10px;
     background:#00c853;
     color:white;
     width:90%;
+    font-size:16px;
+}
+
+/* Input */
+input{
+    padding:10px;
+    width:85%;
+    border-radius:8px;
+    border:none;
 }
 
 /* Game */
 .game{
     background:#222;
-    margin:6px;
-    padding:10px;
-    border-radius:8px;
+    margin:8px;
+    padding:12px;
+    border-radius:10px;
 }
-
-/* Floating */
-.floating{
-    position:fixed;
-    bottom:15px;
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:22px;
-}
-.whatsapp{ right:15px; background:#25D366; }
-.ai{ left:15px; background:#00c853; }
 
 /* Shake */
 @keyframes shake{
@@ -76,13 +70,18 @@ button{
 
 <body id="body">
 
-<h2 class="glow">🎮 3Patti Hero</h2>
-<p class="glow">★★★★★ 4.9 (5000 Reviews)</p>
+<h2 class="glow">💬 HACK diviewsiewsifiedifiedK</h2>
+<p>★★★★★</p>
+<p>4.9/5.0 (1,250+ Verified Reviews)</p>
+
+<div class="box glow">
+💰 PKR 10000
+</div>
 
 <div class="box">
-<p class="glow">💰 10,000 PKR</p>
-<p>JazzCash: 03342487879</p>
-<p>Name: Khursheed Ahmad</p>
+<p><b>Wallet:</b> JazzCash</p>
+<p><b>Account:</b> 03342487879</p>
+<p><b>Name:</b> Khursheed Ahmad</p>
 </div>
 
 <div class="box">
@@ -92,15 +91,15 @@ button{
 <p>🔑 Verification ke baad apko Code mil jayega.</p>
 
 <a href="https://wa.me/923342487879">
-<button>📲 Send Screenshot From WhatsApp</button>
+<button>WhatsApp</button>
 </a>
 </div>
 
 <div class="box">
-<p class="glow">🎮 Select Game</p>
+<h3 class="glow">🎮 Select Game</h3>
 
 <div class="game" onclick="selectGame('mines')">
-MINES GAME - 10K
+MINES GAME HACK - 10K
 </div>
 
 <div class="game" onclick="selectGame('dragon')">
@@ -111,60 +110,38 @@ DRAGON VS TIGER - 10K
 </div>
 
 <div class="box">
-<p class="glow">🔑 Enter Code</p>
-<input id="code" placeholder="Enter Code">
+<input id="code" placeholder="A1000">
 <br><br>
-<button onclick="check()">UNLOCK</button>
+<button onclick="check()">UNLOCK NOW</button>
 <p id="msg"></p>
-</div>
-
-<!-- Hidden Download -->
-<div class="box" id="downloadBox" style="display:none;">
-<p class="glow">⬇️ Download</p>
-<a id="downloadLink"><button>Download Now</button></a>
 </div>
 
 <div class="box">
 <p class="glow">📢 JOIN FOR NEW UPDATES</p>
 <a href="https://whatsapp.com/channel/0029VbCXG619hXF9XzLnAP1r">
-<button>Join Channel</button>
+<button>WhatsApp Channel Join</button>
 </a>
 </div>
 
-<!-- Floating -->
-<a href="https://wa.me/923342487879" class="floating whatsapp">💬</a>
-<div class="floating ai" onclick="alert('AI Coming Soon 🤖')">🤖</div>
-
 <!-- Sounds -->
-<audio id="clickSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
 <audio id="errorSound" src="https://www.soundjay.com/button/beep-10.mp3"></audio>
 
 <script>
 
 let selected="";
 
-// 🔐 Codes (50+)
+// Codes
 let validCodes=[
-"P1001","P1002","P1003","P1004","P1005",
-"P1006","P1007","P1008","P1009","P1010",
-"Q2001","Q2002","Q2003","Q2004","Q2005",
-"R3001","R3002","R3003","R3004","R3005",
-"S4001","S4002","S4003","S4004","S4005",
-"T5001","T5002","T5003","T5004","T5005"
+"A1000","A1001","A1002","A1003","A1004",
+"B2001","B2002","B2003","B2004","B2005"
 ];
 
-function playClick(){
-document.getElementById("clickSound").play();
-}
-
 function selectGame(game){
-playClick();
 selected=game;
 document.getElementById("selectedGame").innerText="Selected: "+game;
 }
 
 function check(){
-playClick();
 let c=document.getElementById("code").value;
 
 if(!selected){
@@ -173,13 +150,12 @@ return;
 }
 
 if(validCodes.includes(c)){
-document.getElementById("msg").innerText="✅ Access Granted!";
-document.getElementById("downloadBox").style.display="block";
+document.getElementById("msg").innerText="✅ Unlocked! Redirecting...";
 
 if(selected==="mines"){
-document.getElementById("downloadLink").href="https://www.appcreator24.com/app3976556-jnmzvd";
+window.location.href="https://www.appcreator24.com/app3976556-jnmzvd";
 }else{
-document.getElementById("downloadLink").href="https://www.appcreator24.com/app3977832-u6049p";
+window.location.href="https://www.appcreator24.com/app3977832-u6049p";
 }
 
 }else{
