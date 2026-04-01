@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>3Patti Hack Apk</title>
+<title>3Patti Hero</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -79,7 +79,7 @@ button{
 
 <body>
 
-<h2 class="glow">🎮 3Patti Hack Download</h2>
+<h2 class="glow">🎮 3Patti Hero</h2>
 
 <!-- Live Users -->
 <div id="liveUsers" class="glow">👥 5234 Online</div>
@@ -115,7 +115,7 @@ setInterval(()=>{
 },3000);
 
 // 🔔 Activity Popup
-let names = ["Ali","Ahmed","Usman","Zain","Hamza","Bilal","Zainab","latif","sulman","rafeeq","rasheed","haneef","kashif","sabir","sadiq","shareef","ramzan","rajab","farooq","sona","Ahmad Raza"];
+let names = ["Ali","Ahmed","Usman","Zain","Hamza","Bilal"];
 
 setInterval(()=>{
     let popup = document.getElementById("popup");
@@ -124,11 +124,6 @@ setInterval(()=>{
     popup.innerText = name + " unlocked premium access";
 
     popup.style.left = "10px";
-
-    et selected = "";
-
-let validCodes = ["P1001","P1002","P1003","P1004","P1005"]; // sample (baaki tum add kar sakte ho)
-    
 
     setTimeout(()=>{
         popup.style.left = "-300px";
