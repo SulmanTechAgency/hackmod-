@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3Patti hack Download</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    font-family: Arial;
+    background:black;
+    color:white;
+    text-align:center;
+    margin:0;
+}
+
+/* Glow */
+.glow{
+    color:#00ffcc;
+    text-shadow:0 0 5px #00ffcc,0 0 15px #00ffcc;
+}
+
+/* Box */
+.box{
+    background:#111;
+    margin:8px;
+    padding:12px;
+    border-radius:10px;
+}
+
+/* Button */
+button{
+    padding:10px;
+    margin:6px;
+    border:none;
+    border-radius:8px;
+    background:#00c853;
+    color:white;
+    width:90%;
+}
+
+/* Game */
+.game{
+    background:#222;
+    margin:6px;
+    padding:10px;
+    border-radius:8px;
+}
+
+/* Floating */
+.floating{
+    position:fixed;
+    bottom:15px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+}
+.whatsapp{ right:15px; background:#25D366; }
+.ai{ left:15px; background:#00c853; }
+
+/* Shake */
+@keyframes shake{
+0%{transform:translateX(0);}
+25%{transform:translateX(-5px);}
+50%{transform:translateX(5px);}
+75%{transform:translateX(-5px);}
+100%{transform:translateX(0);}
+}
+.shake{animation:shake 0.3s;}
+</style>
+
+</head>
+
+<body id="body">
+
+<h2 class="glow">🎮 3Patti Hero</h2>
+<p class="glow">★★★★★ 4.9 (5000 Reviews)</p>
+
+<div class="box">
+<p class="glow">💰 10,000 PKR</p>
+<p>JazzCash: 03342487879</p>
+<p>Name: Khursheed Ahmad</p>
+</div>
+
+<div class="box">
+<p>💸 10000 PKR JazzCash par send karein.</p>
+<p>📸 Payment ke baad Screenshot lein.</p>
+<p>📲 Neeche button se screenshot bhejein.</p>
+<p>🔑 Verification ke baad apko Code mil jayega.</p>
+
+<a href="https://wa.me/923342487879">
+<button>📲 Send Screenshot From WhatsApp</button>
+</a>
+</div>
+
+<div class="box">
+<p class="glow">🎮 Select Game</p>
+
+<div class="game" onclick="selectGame('mines')">
+MINES GAME - 10K
+</div>
+
+<div class="game" onclick="selectGame('dragon')">
+DRAGON VS TIGER - 10K
+</div>
+
+<p id="selectedGame"></p>
+</div>
+
+<div class="box">
+<p class="glow">🔑 Enter Code</p>
+<input id="code" placeholder="Enter Code">
+<br><br>
+<button onclick="check()">UNLOCK</button>
+<p id="msg"></p>
+</div>
+
+<!-- Hidden Download -->
+<div class="box" id="downloadBox" style="display:none;">
+<p class="glow">⬇️ Download</p>
+<a id="downloadLink"><button>Download Now</button></a>
+</div>
+
+<div class="box">
+<p class="glow">📢 JOIN FOR NEW UPDATES</p>
+<a href="https://whatsapp.com/channel/0029VbCXG619hXF9XzLnAP1r">
+<button>Join Channel</button>
+</a>
+</div>
+
+<!-- Floating -->
+<a href="https://wa.me/923342487879" class="floating whatsapp">💬</a>
+<div class="floating ai" onclick="alert('AI Coming Soon 🤖')">🤖</div>
+
+<!-- Sounds -->
+<audio id="clickSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+<audio id="errorSound" src="https://www.soundjay.com/button/beep-10.mp3"></audio>
+
+<script>
+
+let selected="";
+
+// 🔐 Codes (50+)
+let validCodes=[
+"P1001","P1002","P1003","P1004","P1005",
+"P1006","P1007","P1008","P1009","P1010",
+"Q2001","Q2002","Q2003","Q2004","Q2005",
+"R3001","R3002","R3003","R3004","R3005",
+"S4001","S4002","S4003","S4004","S4005",
+"T5001","T5002","T5003","T5004","T5005"
+];
+
+function playClick(){
+document.getElementById("clickSound").play();
+}
+
+function selectGame(game){
+playClick();
+selected=game;
+document.getElementById("selectedGame").innerText="Selected: "+game;
+}
+
+function check(){
+playClick();
+let c=document.getElementById("code").value;
+
+if(!selected){
+document.getElementById("msg").innerText="Select game first!";
+return;
+}
+
+if(validCodes.includes(c)){
+document.getElementById("msg").innerText="✅ Access Granted!";
+document.getElementById("downloadBox").style.display="block";
+
+if(selected==="mines"){
+document.getElementById("downloadLink").href="https://www.appcreator24.com/app3976556-jnmzvd";
+}else{
+document.getElementById("downloadLink").href="https://www.appcreator24.com/app3977832-u6049p";
+}
+
+}else{
+document.getElementById("msg").innerText="❌ Ghalat Code!";
+document.getElementById("body").classList.add("shake");
+document.getElementById("errorSound").play();
+
+setTimeout(()=>{
+document.getElementById("body").classList.remove("shake");
+},300);
+}
+}
+
+</script>
+
+</body>
+</html>
